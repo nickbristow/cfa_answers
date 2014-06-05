@@ -18,8 +18,8 @@ describe "Articles" do
       page.should have_content(content_main)
     end
 
-    is "displays properly formated breadcrumbs" do
-      expect(page.html).to have_tag('div#breadcrumbs ol li')
+    it "displays properly formated breadcrumbs" do
+      expect(page.html).to have_tag('div.breadcrumbs ol li')
     end
 
   end
